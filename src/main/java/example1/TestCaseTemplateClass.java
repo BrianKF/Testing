@@ -1,0 +1,48 @@
+package example1;
+
+
+import static org.junit.Assert.*;
+
+import org.junit.After; 
+import org.junit.Before; 
+import org.junit.Test; 
+import org.openqa.selenium.By; 
+import org.openqa.selenium.WebDriver; 
+import org.openqa.selenium.WebElement; 
+import org.openqa.selenium.chrome.ChromeDriver; 
+
+
+public class TestCaseTemplateClass {
+
+WebDriver driver; 
+
+@Before 
+public void setUp() 
+{
+System.out.println("Launching Chrome Browser");
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\Manish\\Documents\\Selenium\\chromedriver.exe"); 
+
+driver = new ChromeDriver(); 
+
+} 
+
+
+@After 
+public void tearDown() 
+{
+
+driver.quit(); 
+
+}
+
+
+@Test 
+public void testBookDetailsDisplayed()
+{
+	HomePage homePage = new HomePage(driver);
+	assertNotEquals(driver.getTitle(), "Yahoo - Home");
+	
+} 
+
+}
+

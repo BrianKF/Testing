@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37" started-at="2015-11-18T15:55:32Z" finished-at="2015-11-18T15:55:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37" started-at="2015-11-18T15:55:32Z" finished-at="2015-11-18T15:55:32Z">
+      <class name="com.adtheorent.Testing.TestNGTemplate">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="f" duration-ms="11" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="afterClass" is-config="true" duration-ms="0" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="afterTest" is-config="true" duration-ms="0" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.adtheorent.Testing.TestNGTemplate@9629756]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-11-18T10:55:32Z" finished-at="2015-11-18T10:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.adtheorent.Testing.TestNGTemplate -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
