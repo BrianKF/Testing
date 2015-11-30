@@ -1,0 +1,29 @@
+package com.adtheorent.Testing;
+
+public class JsonRequests {
+	
+	
+	private static String MOPUB_BANNER_REQUEST;
+
+	public static String getMopub() {
+		return MOPUB_BANNER_REQUEST;
+	}
+
+	public static void setMopub(String mOPUB_BANNER_REQUEST) {
+		MOPUB_BANNER_REQUEST = mOPUB_BANNER_REQUEST;
+	}
+	
+	
+	
+	
+	private static String PUBMATIC_BANNER_REQUEST;
+
+	public static String getPubmatic() {
+		return PUBMATIC_BANNER_REQUEST;
+	}
+
+	public static void setPubmatic(String pUBMATIC_BANNER_REQUEST) {
+		PUBMATIC_BANNER_REQUEST = pUBMATIC_BANNER_REQUEST;
+	}
+
+}

@@ -1,0 +1,79 @@
+package com.adtheorent.Testing;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class WhatTheHeck {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new FirefoxDriver();
+    	System.out.println("Launching ResetDeviceTypes Script");
+    	System.out.println("Launching Firefox Web Browser");    	
+        UILogin.login(driver, "Brian.Frazier@adtheorent.com", "AdTheorent155");
+        driver.navigate().to("http://uatplatformv2.adtheorent.com/Strategy/Manage/%5EW9k$T00!mlkPTEyOTgm%5EGlp$D02Mzk=");
+		
+ 
+		System.out.println("Clicking on Device Link");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("html/body/section/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div/a")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='lnkDevice']")).click();
+        
+		
+		
+		System.out.println("Reseting Device configuration");
+        Thread.sleep(8000);
+//        Boolean isPresent = driver.findElement(By.xpath(".//*[@id='chkallOs']")).isDisplayed();
+//        if (isPresent == false)
+//        {
+//            System.out.println("Hmmm... It appears the detail view isn't opened.  Now opening.");
+//        	driver.findElement(By.xpath(".//*[@id='show_device_detailed']")).click();
+//        	}
+//        WebElement SelectAll1;
+//        WebElement SelectAll2;
+//        WebElement TargetOS;
+//        SelectAll1 = driver.findElement(By.xpath(".//*[@id='chkbx_SelectAllTablets']"));
+//        SelectAll2 = driver.findElement(By.xpath(".//*[@id='chkbx_SelectAllSmartphones']"));
+//        TargetOS = driver.findElement(By.xpath(".//*[@id='chkTargetOs']"));
+//        if(!SelectAll1.isSelected()){
+//        	SelectAll1.click();
+//        }
+//        if(!SelectAll2.isSelected()){
+//        	SelectAll2.click();
+//        }
+//    	if(!TargetOS.isSelected()){
+//    		TargetOS.click();
+//    	}
+//        Thread.sleep(3000);       
+//        driver.findElement(By.xpath(".//*[@id='chkbx_SelectAllTablets']")).click();
+//        driver.findElement(By.xpath(".//*[@id='chkbx_SelectAllSmartphones']")).click();
+//        driver.findElement(By.xpath(".//*[@id='chkTargetOs']")).click();
+//        driver.findElement(By.xpath(".//*[@id='divModalDevice']/div/div/div[3]/button[1]")).click();
+//      //Confirms test parameters are correct
+//        System.out.println("Checking to make sure settings are correct");
+//        Thread.sleep(5000);
+//        WebElement element = driver.findElement(By.xpath("html/body/section/div[2]/div[3]/div[2]/div[1]/div[2]/div[2]/div[3]/table/tbody/tr/td[3]"));
+//        String strng = element.getText();
+//        System.out.println(strng);
+//        
+//        try {
+//        	Assert.assertEquals("", strng);
+//        } catch (AssertionError err) {
+//        	System.out.println("Something went wrong.  Trying again...");
+//        	System.out.println("");
+//            driver.quit();
+//        	ResetDeviceTypes();
+//        }
+        
+        //Closing the browser
+//        System.out.println("Closing the browser.  Test Complete");
+//        Thread.sleep(5000);
+//        driver.quit();
+
+	}
+
+}

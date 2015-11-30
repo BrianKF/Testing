@@ -1,0 +1,82 @@
+package com.adtheorent.Testing;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class AudienceTargetingGenderMale {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new FirefoxDriver();
+    	System.out.println("Launching AudienceTargetingGenderMale Script");
+    	System.out.println("Launching Firefox Web Browser");
+    	System.out.println("");
+        UILogin.login(driver, "Brian.Frazier@adtheorent.com", "AdTheorent155");
+    	driver.navigate().to("http://uatplatformv2.adtheorent.com/Strategy/Manage/%5EW9k$T00!mlkPTEyOTgm%5EGlp$D02Mzk=");
+
+    	// Sets gender to male
+        driver.findElement(By.xpath(".//*[@id='lnkAudience']/i")).click();
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath(".//*[@id='gender']/div[1]/label/input")).click();
+	    driver.findElement(By.xpath(".//*[@id='divModalAudience']/div/div/div[3]/button[1]")).click();
+	    
+	    // Makse sure age is not targeted
+	    Thread.sleep(2000);
+        driver.findElement(By.xpath(".//*[@id='lnkAudience']/i")).click();
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(".//*[@id='liage']/a")).click();
+        WebElement SkipAgeTargeting;
+        SkipAgeTargeting = driver.findElement(By.id("chkAllowAgeNull"));
+        if(!SkipAgeTargeting.isSelected()){
+        	SkipAgeTargeting.click();
+        }
+        driver.findElement(By.xpath(".//*[@id='chkAllowAgeNull']")).click();
+        Thread.sleep(4000);
+        driver.findElement(By.xpath(".//*[@id='divModalAudience']/div/div/div[3]/button[1]")).click();
+        
+        
+        
+        Thread.sleep(3000);
+        driver.findElement(By.xpath(".//*[@id='lnkAudience']/i")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath(".//*[@id='lilanguage']/a")).click();
+        driver.findElement(By.xpath(".//*[@id='language']/div/div[2]/p[3]/a/i")).click();
+        driver.findElement(By.xpath(".//*[@id='divModalAudience']/div/div/div[3]/button[1]")).click();
+        
+        
+        Thread.sleep(3000);
+        driver.findElement(By.xpath(".//*[@id='lnkAudience']/i")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath(".//*[@id='limosaics']/a")).click();
+        driver.findElement(By.xpath(".//*[@id='mosaics']/div/div[2]/p[3]/a/i")).click();
+        driver.findElement(By.xpath(".//*[@id='divModalAudience']/div/div/div[3]/button[1]")).click();
+        
+        
+        Thread.sleep(3000);
+        driver.findElement(By.xpath(".//*[@id='lnkAudience']/i")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath(".//*[@id='lihomeorbusiness']/a")).click();
+        driver.findElement(By.xpath(".//*[@id='homeorbusiness']/div[1]/label/input")).click();
+        driver.findElement(By.xpath(".//*[@id='divModalAudience']/div/div/div[3]/button[1]")).click();
+        
+        //Confirms test parameters are correct
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.id("spanGender"));
+        String strng = element.getText();
+        System.out.println(strng);
+        Assert.assertEquals("Male", strng);
+        
+        WebElement element3 = driver.findElement(By.id("spanHomeOrBusiness"));
+        String strng3 = element3.getText();
+        System.out.println(strng3);
+        Assert.assertEquals("All", strng3);
+        
+        //Closes browser and ends test
+        Thread.sleep(2000);
+        driver.quit();
+	}
+}
